@@ -1,0 +1,47 @@
+/* animations.css */
+
+/* Fade In + Scale */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse Button */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Services Card Hover */
+.glass-card:hover {
+    animation: pulse 0.6s ease-in-out;
+    box-shadow: 0 12px 30px rgba(0, 255, 204, 0.4);
+}
+
+/* Section Titles */
+.section-title {
+    animation: fadeInScale 1s ease forwards;
+}
+
+/* Hero Heading + Paragraph */
+header h1, header p {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 1.2s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Testimonials Hover */
+.testimonial:hover {
+    animation: fadeInScale 0.6s ease-in-out;
+}
